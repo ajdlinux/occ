@@ -713,6 +713,7 @@ void nest_dts_init(void)
 // End Function Specification
 void task_24x7(task_t * i_task)
 {
+	return; // Disable 24x7
     static uint8_t L_numTicks = 0x00;  // never called since OCC started
     static bool    L_idle_trace = FALSE;
 
